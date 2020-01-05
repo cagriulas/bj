@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "bj"
+version = "0.1.0"
+description = ""
+authors = ["Çağrı Ulaş <cagriulas@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.6"
+jira = "^2.0.0"
+stashy = "^0.6"
+cleo = "^0.7.6"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
+
+[tool.poetry.scripts]
+bj = 'bj.console:run'
